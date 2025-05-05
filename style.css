@@ -1,130 +1,69 @@
-/* Reset & Base */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 body {
+  margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  color: #fff;
-  background-color: #000;
-  overflow-x: hidden;
-  position: relative;
-}
-a {
-  text-decoration: none;
-  color: #ffa000;
-}
-a:hover {
-  text-decoration: underline;
-}
-
-/* Galaxy Background */
-body::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('https://www.transparenttextures.com/patterns/stardust.png') repeat, radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  background: url('https://i.imgur.com/HkU0MHU.jpg') no-repeat center center fixed;
   background-size: cover;
-  z-index: -1;
-  animation: moveGalaxy 60s linear infinite;
-  opacity: 0.7;
-}
-@keyframes moveGalaxy {
-  0% { background-position: 0 0; }
-  100% { background-position: -1000px -1000px; }
+  color: #fff;
+  overflow-x: hidden;
 }
 
-/* Header */
-header {
+header, section, footer {
   text-align: center;
-  padding: 80px 20px 40px;
-}
-header h1 {
-  font-size: 3em;
-  margin-bottom: 20px;
-}
-header p {
-  font-size: 1.2em;
-  max-width: 600px;
-  margin: 0 auto 40px;
+  padding: 50px 20px;
+  background: rgba(0, 0, 0, 0.6);
+  margin: 20px auto;
+  border-radius: 15px;
+  max-width: 960px;
 }
 
-/* Buttons */
-.buttons {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.btn-primary,
-.btn-secondary {
-  background-color: #ff9800;
-  padding: 14px 24px;
-  border-radius: 8px;
-  color: #fff;
-  font-weight: bold;
-  transition: all 0.3s ease;
-  box-shadow: 0 0 10px #ff9800;
-}
-.btn-primary:hover,
-.btn-secondary:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px #ffcc80;
-  color: #fff;
-}
-
-/* Main */
-main {
-  padding: 40px 20px;
-}
-section h2 {
-  margin-top: 60px;
-  font-size: 2em;
-  border-bottom: 2px solid #ffa000;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-}
-.card {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 10px;
-  box-shadow: 0 0 12px rgba(255, 152, 0, 0.2);
-}
-.card h3 {
-  color: #ffa000;
-  margin-bottom: 8px;
-}
-.card p {
-  margin-bottom: 8px;
-}
-.card a {
-  color: #ffcc80;
-  font-weight: bold;
-}
-
-/* List Style */
-ul.safety-steps,
-ul {
-  padding-left: 20px;
-  margin: 10px 0 20px;
-}
-ul li {
+h1, h2, h3 {
+  color: #ffa500;
   margin-bottom: 10px;
 }
 
-/* Footer CTA */
-.final-cta {
-  margin-top: 80px;
-  padding-bottom: 100px;
-  text-align: center;
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  margin: 20px auto;
+  border-left: 5px solid #ffa500;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.note {
-  margin-top: 40px;
-  font-style: italic;
-  color: #ccc;
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(255, 165, 0, 0.6);
+}
+
+.card.warning {
+  border-color: red;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 14px 26px;
+  background: #ffa500;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 50px;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  background: #ff8c00;
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #ff9900;
+  color: white; /* Prevent text disappearing */
+}
+
+.final-cta {
+  display: inline-block;
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
