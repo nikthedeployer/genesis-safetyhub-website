@@ -1,129 +1,88 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Genesis | Safety Hub</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/456/456212.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">🛡️ Genesis</div>
+    <ul class="nav-links">
+      <li><a href="#verified">Verified Executors</a></li>
+      <li><a href="#safety">Stay Protected</a></li>
+      <li><a href="#steps">Executor Analysis</a></li>
+      <li><a href="#discord">Join Discord</a></li>
+    </ul>
+  </nav>
 
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #1e1e1e;
-  color: white;
-  padding: 20px;
-  line-height: 1.6;
-}
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Genesis | Ultimate Safety Hub</h1>
+      <p>Your #1 destination for trusted safety tools and resources. Protect yourself online.</p>
+    </div>
+  </header>
 
-a {
-  text-decoration: none;
-  color: #ff6f00;
-}
+  <section id="verified" class="section">
+    <h2 class="section-title">✅ Verified Executors</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>💻 Windows Executors</h3>
+        <ul>
+          <li>🟠 <strong>AWP</strong> (Paid) – <a href="https://buyawp.gg/" target="_blank">Buy AWP</a></li>
+          <li>⚠️ <strong>Swift</strong> (Free) – Under Review – <a href="https://getswift.gg" target="_blank">Visit Website</a></li>
+          <li>🟠 <strong>Velocity</strong> (Free) – <a href="https://getvelocity.live/" target="_blank">Visit Website</a></li>
+          <li>🟠 <strong>Xeno</strong> (Free) – <a href="https://www.xeno.now/" target="_blank">Visit Website</a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>📱 Mobile Executors</h3>
+        <ul>
+          <li>🟠 <strong>KRNL</strong> (Free) – <a href="https://discord.gg/getkrnl" target="_blank">Get KRNL</a></li>
+          <li>🟠 <strong>Codex</strong> (Free) – <a href="https://codex.lol" target="_blank">Visit Website</a></li>
+          <li>🟠 <strong>Delta</strong> (Free) – <a href="https://deltaexploits.gg" target="_blank">Visit Website</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-a:hover {
-  color: #ffa000;
-}
+  <section id="safety" class="section alt-section">
+    <h2 class="section-title">🛡️ Stay Protected</h2>
+    <p class="section-subtitle">Safety isn't just about verified executors. Protect yourself from all malicious tools.</p>
+    <ul class="safety-list">
+      <li>✔️ Only download executors and tools from official or trusted sources.</li>
+      <li>✔️ Always use sandbox tools like <a href="https://tria.ge" target="_blank">Tria.ge</a> to analyze tools.</li>
+      <li>✔️ Avoid using script hubs that have not been reviewed or trusted by the community.</li>
+      <li>✔️ Enable firewalls and antivirus software to catch any suspicious behavior.</li>
+      <li>✔️ Never share your account credentials or private information.</li>
+      <li>✔️ Stay informed on known malicious tools to avoid risks.</li>
+    </ul>
+  </section>
 
-h1, h2, h3 {
-  color: #ff6f00;
-}
+  <section id="steps" class="section">
+    <h2 class="section-title">🧑‍💻 Executor Analysis Steps</h2>
+    <p class="section-subtitle">Follow these professional steps to safely analyze and execute executors:</p>
+    <ol class="steps-list">
+      <li>🔍 **Step 1:** Research the executor tool on trusted platforms like forums or review sites.</li>
+      <li>🧪 **Step 2:** Use sandbox tools like <a href="https://tria.ge" target="_blank">Tria.ge</a> to check if it behaves maliciously.</li>
+      <li>🛑 **Step 3:** Make sure the tool has positive reviews and has been verified by a trusted community.</li>
+      <li>🔑 **Step 4:** Ensure the executor is listed on Genesis Safety Hub to confirm it is safe.</li>
+      <li>📜 **Step 5:** Keep track of updates and changelogs to ensure the tool remains secure.</li>
+    </ol>
+  </section>
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #333;
-  padding: 10px 20px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
-}
+  <section id="discord" class="section">
+    <h2 class="section-title">🔗 Join Our Discord</h2>
+    <p>Join our community for in-depth safety guides, verified executor discussions, and more!</p>
+    <a href="https://discord.gg/ca2WhwTnPB" target="_blank" class="btn-discord">Join Genesis Hub</a>
+  </section>
 
-.navbar .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.navbar ul {
-  list-style: none;
-}
-
-.navbar ul li {
-  display: inline;
-  margin: 0 10px;
-}
-
-.navbar ul li a {
-  color: white;
-  font-weight: bold;
-}
-
-.hero {
-  background: #333;
-  color: white;
-  padding: 60px 0;
-  text-align: center;
-  margin-top: 70px;
-}
-
-.hero .hero-content {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.btn-primary, .btn-discord {
-  padding: 12px 20px;
-  background-color: #ff6f00;
-  color: white;
-  border: none;
-  cursor: pointer;
-  text-transform: uppercase;
-  border-radius: 5px;
-}
-
-.card-container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.card {
-  background: #444;
-  padding: 20px;
-  width: 45%;
-  border-radius: 10px;
-}
-
-.card h3 {
-  font-size: 1.3rem;
-  margin-bottom: 15px;
-}
-
-.card ul {
-  list-style: none;
-}
-
-.card ul li {
-  margin-bottom: 10px;
-}
-
-.steps-list {
-  list-style-type: decimal;
-  margin-top: 20px;
-}
-
-.steps-list li {
-  margin-bottom: 10px;
-}
-
-footer {
-  text-align: center;
-  margin-top: 40px;
-  font-size: 0.9rem;
-  padding: 20px 0;
-  background-color: #333;
-}
-
-footer p {
-  color: #ff6f00;
-}
+  <footer>
+    <p>© 2025 Genesis Safety Hub | The #1 Destination for Safety Tools and Resources</p>
+  </footer>
+</body>
+</html>
