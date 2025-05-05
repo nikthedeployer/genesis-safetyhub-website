@@ -219,7 +219,6 @@ body::before {
 
 .card ul li {
   margin-bottom: 8px;
-}
 
 /* Footer Styles */
 footer {
@@ -257,3 +256,23 @@ footer a:hover {
     opacity: 1;
   }
 }
+
+/* Hover Fix for Buttons */
+.hero .btn-container a {
+  color: #fff; /* Make sure the text stays visible */
+}
+
+.btn-primary:hover, .btn-secondary:hover, .btn-discord:hover {
+  background-color: #ffa000;
+  color: #fff; /* Ensure text is visible even on hover */
+}
+
+.btn-primary, .btn-secondary, .btn-discord {
+  color: white !important; /* Ensure text is always visible */
+}
+
+/* Button Hover Fix */
+.hero .btn-container a:hover {
+  color: white !important; /* Ensure the text color stays white */
+}
+
