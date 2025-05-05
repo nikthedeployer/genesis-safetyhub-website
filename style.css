@@ -11,13 +11,6 @@ body {
   overflow-x: hidden;
   position: relative;
 }
-a {
-  text-decoration: none;
-  color: #ffa000;
-}
-a:hover {
-  text-decoration: underline;
-}
 
 /* Galaxy Background */
 body::before {
@@ -119,10 +112,30 @@ ul li {
 
 /* Footer CTA */
 .final-cta {
-  margin-top: 120px; /* increased spacing */
-  padding-bottom: 120px; /* prevents overlapping */
+  margin-top: 80px;
+  padding-bottom: 100px;
   text-align: center;
 }
+
+/* Fixed Join Genesis Hub Button at the Bottom */
+.bottom-fixed-cta {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #ff9800;
+}
+
+.bottom-fixed-cta .btn-primary {
+  font-size: 0.9em;
+  padding: 10px 20px;
+}
+
+/* Final CTA styling */
 .note {
   margin-top: 40px;
   font-style: italic;
